@@ -16,9 +16,8 @@
 export const API_BASE = (process.env.EXPO_PUBLIC_API_URL ?? '').trim().replace(/\/$/, '');
 
 /**
- * Set to true once the Firebase project for ElderEase exists and the
- * values in lib/firebase.ts / lib/firebase.native.ts are the real web
- * config. No Firebase project exists yet — TODO-ELDEREASE placeholders
- * are in both files and wiring is a publish step, so this stays false.
+ * True now that the Firebase project for ElderEase exists
+ * (elderease-6390f) and the values in lib/firebase.ts /
+ * lib/firebase.native.ts are the real web config.
  */
-export const firebaseConfigured = false;
+export const firebaseConfigured = true;
