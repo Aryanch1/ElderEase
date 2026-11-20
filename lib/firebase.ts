@@ -5,11 +5,9 @@ import { getFirestore } from 'firebase/firestore';
 /**
  * Firebase wiring for ElderEase — web.
  *
- * No Firebase project exists yet — TODO-ELDEREASE placeholders below;
- * wiring is a publish step. Until the real config lands, the app runs
- * in full local/guest mode. When the project exists, enable
- * Email/Password + Google sign-in (email-link OFF) and add the Vercel
- * domain to Firebase authorized domains.
+ * Firebase project elderease-6390f is configured below. Email/Password +
+ * Google sign-in are enabled (email-link OFF); add the Vercel domain
+ * to Firebase authorized domains.
  *
  * The config values are Firebase's public app identifiers — they are
  * designed to ship in client code. Access is controlled by Firebase
@@ -27,16 +25,16 @@ import { getFirestore } from 'firebase/firestore';
  * each platform always gets one consistent set of Firebase modules.
  */
 const firebaseConfig = {
-  apiKey: 'TODO-ELDEREASE-API-KEY',
-  authDomain: 'TODO-ELDEREASE.firebaseapp.com',
-  projectId: 'TODO-ELDEREASE',
-  storageBucket: 'TODO-ELDEREASE.firebasestorage.app',
-  messagingSenderId: 'TODO-ELDEREASE-SENDER-ID',
-  appId: 'TODO-ELDEREASE-APP-ID',
+  apiKey: 'AIzaSyCdGO8yYUHtI3OFPxeEXLvg9lcSXCvjv6g',
+  authDomain: 'elderease-6390f.firebaseapp.com',
+  projectId: 'elderease-6390f',
+  storageBucket: 'elderease-6390f.firebasestorage.app',
+  messagingSenderId: '495779872699',
+  appId: '1:495779872699:web:236215e5ed2d97bccfce9e',
 };
 
 /** OAuth web client ID for the native Google Sign-In flow (not a secret). */
-export const GOOGLE_WEB_CLIENT_ID = 'TODO-ELDEREASE-GOOGLE-WEB-CLIENT-ID';
+export const GOOGLE_WEB_CLIENT_ID = '495779872699-ekj7dp508k089desd4g7fmajh634om0f.apps.googleusercontent.com';
 
 export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
